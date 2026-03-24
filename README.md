@@ -1,18 +1,18 @@
 # Nebula Collective Website
 
-Launchable static website prototype for `Nebulacollective.org`, assembled from the design workshop prototypes in [`workshop/`](./workshop).
+Launchable static website for `Nebulacollective.org`, with content grounded in the provided nonprofit narrative and program documents.
 
 ## Pages
 
 - `index.html` - Home
-- `showcase.html` - Public shows + gallery
-- `technology.html` - Production technology
-- `education.html` - Workshops + curriculum
-- `about.html` - Mission, legal anchors, support
-- `experience.html` - Placeholder destination for hero CTA
-- `learn-more.html` - Placeholder destination for hero CTA
+- `education.html` - Nebula Academy tracks, delivery, and yearly output targets
+- `technology.html` - Toolchains, system scope, and safety boundaries
+- `showcase.html` - Nebula Pop-Ups timeline and public-art delivery model
+- `about.html` - Operations, funding model, and support information
+- `experience.html` - End-to-end participant journey across programs
+- `learn-more.html` - FAQ and program logistics summary
 
-All top navigation tabs are wired for click-through across pages.
+All navigation tabs and in-page CTAs are wired for click-through across pages.
 
 ## Run Locally
 
@@ -29,4 +29,4 @@ Then open:
 ## Hosting Notes
 
 - `CNAME` is set to `Nebulacollective.org` for GitHub Pages style hosting.
-- This is currently a static HTML/Tailwind-CDN build, so no Node install is required.
+- This is a static HTML + CSS site (`site.css`), so no Node install is required.
