@@ -38,9 +38,21 @@
       <div class="hero-copy">
         <span class="kicker">Educational + Cultural Nonprofit</span>
         <h1 class="home-hero-title">
-          <span>INSPIRATION</span>
-          <span>EDUCATION</span>
-          <span>ACCESS</span>
+          <span
+            class="hero-word hero-word-inspiration"
+            onmouseenter="window.handleHeroWordEnter && window.handleHeroWordEnter(this, 'var(--tertiary)')"
+            onmouseleave="window.handleHeroWordLeave && window.handleHeroWordLeave(this)"
+          >INSPIRATION</span>
+          <span
+            class="hero-word hero-word-education"
+            onmouseenter="window.handleHeroWordEnter && window.handleHeroWordEnter(this, '#7dffb3')"
+            onmouseleave="window.handleHeroWordLeave && window.handleHeroWordLeave(this)"
+          >EDUCATION</span>
+          <span
+            class="hero-word hero-word-access"
+            onmouseenter="window.handleHeroWordEnter && window.handleHeroWordEnter(this, '#ff8fe8')"
+            onmouseleave="window.handleHeroWordLeave && window.handleHeroWordLeave(this)"
+          >ACCESS</span>
         </h1>
         <p>
           Nebula organizes its nonprofit programs into three connected tracks: Nebula Academy (instruction), Nebula Lab
@@ -159,5 +171,31 @@
     </div>
     <div class="site-shell meta">© 2026 Nebula Foundation. Content based on internal nonprofit narrative documents.</div>
   </footer>
+  <script>
+    window.handleHeroWordEnter = (element, color) => {
+      element.classList.add("is-hovering");
+      element.style.color = color;
+      if (!element.dataset.flipped) {
+        element.dataset.flipped = "true";
+        element.animate(
+          [
+            { transform: "perspective(1000px) translateY(0) rotateX(0deg)" },
+            { transform: "perspective(1000px) translateY(-0.24em) rotateX(-140deg)", offset: 0.35 },
+            { transform: "perspective(1000px) translateY(-0.16em) rotateX(-260deg)", offset: 0.65 },
+            { transform: "perspective(1000px) translateY(0) rotateX(-360deg)" }
+          ],
+          {
+            duration: 950,
+            easing: "cubic-bezier(0.22, 0.8, 0.28, 1)"
+          }
+        );
+      }
+    };
+
+    window.handleHeroWordLeave = (element) => {
+      element.classList.remove("is-hovering");
+      element.style.color = "";
+    };
+  </script>
 </body>
 </html>

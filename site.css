@@ -170,6 +170,16 @@ a {
   margin-top: 0.375em;
 }
 
+.hero .home-hero-title .hero-word {
+  display: block;
+  transition: color 180ms ease;
+  cursor: pointer;
+}
+
+.hero .home-hero-title .hero-word.is-hovering {
+  will-change: transform, color;
+}
+
 .hero .tech-hero-title {
   line-height: 1;
   margin-top: 0.1875em;
