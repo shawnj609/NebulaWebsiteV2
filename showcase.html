@@ -13,11 +13,11 @@
   <header class="top-nav-wrap">
     <div class="site-shell">
       <nav class="top-nav">
-        <a class="brand" href="index.html">Nebula Collective</a>
+        <a class="brand" href="index.html">Nebula Foundation</a>
         <div class="links">
           <a class="nav-link" href="index.html">Home</a>
-          <a class="nav-link" href="education.html">Academy</a>
           <a class="nav-link" href="technology.html">Technology</a>
+          <a class="nav-link" href="education.html">Programs</a>
           <a class="nav-link active" href="showcase.html">Pop-Ups</a>
           <a class="nav-link" href="about.html">About</a>
         </div>
@@ -25,8 +25,8 @@
       </nav>
       <div class="mobile-links">
         <a class="nav-link" href="index.html">Home</a>
-        <a class="nav-link" href="education.html">Academy</a>
         <a class="nav-link" href="technology.html">Technology</a>
+        <a class="nav-link" href="education.html">Programs</a>
         <a class="nav-link active" href="showcase.html">Pop-Ups</a>
         <a class="nav-link" href="about.html">About</a>
       </div>
@@ -34,82 +34,63 @@
   </header>
 
   <main class="site-shell">
-    <section class="hero">
-      <div>
-        <span class="kicker">Nebula Pop-Ups</span>
-        <h1>Temporary installations that serve the public and strengthen instruction.</h1>
-        <p>
-          Pop-Ups are site-specific art experiences delivered in community and festival contexts. They are collaborative, project-lead driven,
-          and intentionally temporary, allowing rapid experimentation while prioritizing safety, accessibility, and meaningful engagement.
-        </p>
-      </div>
-      <div class="card">
-        <p class="stat">How Pop-Ups Function</p>
-        <ul>
-          <li>Each project has a designated lead for schedule, contributor coordination, and safety practice.</li>
-          <li>On-site execution is public-facing and participatory where context allows.</li>
-          <li>Post-event lessons feed directly into Academy and Lab curriculum updates.</li>
-          <li>Projects may be preserved, reused, or deconstructed for material repurposing.</li>
-        </ul>
-      </div>
-    </section>
-
     <section class="section">
-      <h2>Venue and Community Context</h2>
-      <div class="grid grid-2" style="margin-top:1rem;">
-        <article class="card">
-          <h3>Regional events</h3>
-          <p>Texas regional burns (including Flipside and Freezer Burn) and large-scale arts gatherings such as Burning Man are core contexts for Pop-Up deployment.</p>
-        </article>
-        <article class="card">
-          <h3>Austin-based installations</h3>
-          <p>Independent local Pop-Ups in Austin event spaces support broader public access and right-sized experimentation.</p>
-        </article>
-      </div>
-    </section>
+      <div class="featured-video-card popups-shell">
+        <div class="popups-heading-row">
+          <div>
+            <span class="kicker">Upcoming Events</span>
+            <h1 class="popups-title">Nebula Pop-Ups</h1>
+          </div>
+          <div class="popups-controls" aria-label="Carousel controls">
+            <button type="button" class="popups-control" data-carousel-direction="-1" aria-label="Previous events">Prev</button>
+            <button type="button" class="popups-control" data-carousel-direction="1" aria-label="Next events">Next</button>
+          </div>
+        </div>
 
-    <section class="section">
-      <h2>Timeline From the Nonprofit Narrative</h2>
-      <div class="timeline" style="margin-top:1rem;">
-        <div class="row">
-          <div class="year">2023-2025</div>
-          <div>
-            <h3>Participatory build years</h3>
-            <p>Collaborative installations and event contributions at Burning Man and Flipside are documented as core past activities, with additional event history in development details.</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="year">2026</div>
-          <div>
-            <h3>Year 1 delivery target</h3>
-            <p>Two major Pop-Ups: Burning Man (Black Rock City, Nevada) and Flipside (Central Texas), emphasizing reliable execution and documented engagement.</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="year">2027</div>
-          <div>
-            <h3>Fundraising expansion</h3>
-            <p>Continue Burning Man + Flipside and add one annual fundraising Pop-Up aligned with mission sustainability.</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="year">2028</div>
-          <div>
-            <h3>Three public Pop-Ups annually</h3>
-            <p>Target annual cadence of Burning Man, Flipside, and one additional regional/community installation.</p>
-          </div>
+        <div class="popups-carousel" id="popups-carousel">
+          <article class="popups-slide">
+            <p class="stat">Event 01</p>
+            <h2>Burning Man Build + Deployment</h2>
+            <p>Black Rock City, Nevada</p>
+            <p>Large-scale public installation work with projection, lighting, and drone accents integrated into a temporary desert environment.</p>
+          </article>
+
+          <article class="popups-slide">
+            <p class="stat">Event 02</p>
+            <h2>Flipside Regional Pop-Up</h2>
+            <p>Central Texas</p>
+            <p>A regional testbed for participatory installation ideas, technical reliability, and creative iteration in a live community setting.</p>
+          </article>
+
+          <article class="popups-slide">
+            <p class="stat">Event 03</p>
+            <h2>Austin Community Activation</h2>
+            <p>Austin, Texas</p>
+            <p>A right-sized city-facing event focused on access, curiosity, and introducing new audiences to Nebula's visual technology work.</p>
+          </article>
+
+          <article class="popups-slide">
+            <p class="stat">Event 04</p>
+            <h2>Fundraiser Showcase Night</h2>
+            <p>Venue TBA</p>
+            <p>An event-forward presentation designed to support fundraising, demonstrate mission alignment, and spotlight current creative systems.</p>
+          </article>
         </div>
       </div>
     </section>
 
-    <section class="section">
-      <h2>Why Pop-Ups Matter for Education</h2>
-      <div class="card" style="margin-top:1rem;">
-        <p>
-          Pop-Ups are the applied testing ground for new projection methods, show-control ideas, interaction concepts, and setup/safety workflows.
-          This creates a practical feedback loop: what works in the field gets documented and folded back into Academy and Lab instruction,
-          improving relevance for students and strengthening operational quality over time.
-        </p>
+    <section class="section popups-video-section">
+      <div class="popups-video-shell">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/5AxZHl91OV0?si=iS6tAR7LSlJDsUoN"
+          title="Nebula Pop-Ups video"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
       </div>
     </section>
   </main>
@@ -117,21 +98,33 @@
   <footer>
     <div class="site-shell footer-wrap">
       <div>
-        <div class="footer-title">Public Art Programming</div>
-        <p>Pop-Ups are designed to be inclusive, collaborative, and culturally additive in the communities where they are presented.</p>
+        <div class="footer-title">Nebula Pop-Ups</div>
+        <p>Public-facing installations, event activations, and temporary creative technology environments.</p>
       </div>
       <div>
         <div class="footer-title">Related Pages</div>
-        <p><a href="education.html">Academy Programs</a></p>
-        <p><a href="technology.html">Technology Methods</a></p>
+        <p><a href="education.html">Programs</a></p>
+        <p><a href="technology.html">Technology</a></p>
       </div>
       <div>
         <div class="footer-title">Support</div>
         <p><a href="about.html#support">Donations + Sponsorship</a></p>
-        <p><a href="about.html">Operations + Governance</a></p>
+        <p><a href="about.html">About</a></p>
       </div>
     </div>
-    <div class="site-shell meta">Pop-Up details aligned with nonprofit narrative supplement (past/present/planned sections).</div>
   </footer>
+
+  <script>
+    const carousel = document.getElementById("popups-carousel");
+    const controls = document.querySelectorAll("[data-carousel-direction]");
+
+    controls.forEach((button) => {
+      button.addEventListener("click", () => {
+        const direction = Number(button.dataset.carouselDirection || "0");
+        const amount = carousel.clientWidth * 0.68 * direction;
+        carousel.scrollBy({ left: amount, behavior: "smooth" });
+      });
+    });
+  </script>
 </body>
 </html>

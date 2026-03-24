@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Program Sign Up | Nebula Foundation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="site.css"/>
+</head>
+<body>
+  <header class="top-nav-wrap">
+    <div class="site-shell">
+      <nav class="top-nav">
+        <a class="brand" href="index.html">Nebula Foundation</a>
+        <div class="links">
+          <a class="nav-link" href="index.html">Home</a>
+          <a class="nav-link" href="technology.html">Technology</a>
+          <a class="nav-link" href="education.html">Programs</a>
+          <a class="nav-link" href="showcase.html">Pop-Ups</a>
+          <a class="nav-link" href="about.html">About</a>
+        </div>
+        <a class="btn btn-primary" href="index.html#support">Support</a>
+      </nav>
+      <div class="mobile-links">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="technology.html">Technology</a>
+        <a class="nav-link" href="education.html">Programs</a>
+        <a class="nav-link" href="showcase.html">Pop-Ups</a>
+        <a class="nav-link" href="about.html">About</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="site-shell">
+    <section class="signup-hero">
+      <span class="kicker">Private Sign Up Link</span>
+      <h1>Join a Nebula program.</h1>
+      <p class="signup-subhead">
+        This page is intended to be shared directly with prospective participants. Fill out the form and it will open a prepared email draft
+        with the details for the Nebula team.
+      </p>
+    </section>
+
+    <section class="section">
+      <div class="signup-layout">
+        <div class="signup-card">
+          <form id="program-signup-form" class="signup-form">
+            <div class="signup-field">
+              <label for="signup-name">Full name</label>
+              <input id="signup-name" name="name" type="text" required/>
+            </div>
+
+            <div class="signup-grid">
+              <div class="signup-field">
+                <label for="signup-email">Email</label>
+                <input id="signup-email" name="email" type="email" required/>
+              </div>
+              <div class="signup-field">
+                <label for="signup-phone">Phone</label>
+                <input id="signup-phone" name="phone" type="tel"/>
+              </div>
+            </div>
+
+            <div class="signup-grid">
+              <div class="signup-field">
+                <label for="signup-program">Program interest</label>
+                <select id="signup-program" name="program" required>
+                  <option value="">Select one</option>
+                  <option value="Nebula Academy">Nebula Academy</option>
+                  <option value="Nebula Lab">Nebula Lab</option>
+                  <option value="Nebula Pop-Ups">Nebula Pop-Ups</option>
+                  <option value="Not sure yet">Not sure yet</option>
+                </select>
+              </div>
+              <div class="signup-field">
+                <label for="signup-age">Age or age range</label>
+                <input id="signup-age" name="age" type="text" placeholder="Example: 16 or adult"/>
+              </div>
+            </div>
+
+            <div class="signup-field">
+              <label for="signup-background">What are you interested in learning?</label>
+              <textarea id="signup-background" name="interests" rows="5" required></textarea>
+            </div>
+
+            <div class="signup-field">
+              <label for="signup-experience">Any prior experience?</label>
+              <textarea id="signup-experience" name="experience" rows="4"></textarea>
+            </div>
+
+            <div class="signup-field">
+              <label for="signup-notes">Anything else we should know?</label>
+              <textarea id="signup-notes" name="notes" rows="4"></textarea>
+            </div>
+
+            <div class="signup-actions">
+              <button type="submit" class="btn btn-primary">Open Sign Up Email</button>
+              <p class="signup-note">No backend is connected yet, so this form opens your email app with the information filled in.</p>
+            </div>
+          </form>
+        </div>
+
+        <aside class="signup-sidecard">
+          <p class="stat">How It Works</p>
+          <ul>
+            <li>Prospective participants fill in their details.</li>
+            <li>The button opens a drafted email to the Nebula team.</li>
+            <li>The page stays off the main navigation and can be shared directly as needed.</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="site-shell footer-wrap">
+      <div>
+        <div class="footer-title">Nebula Foundation</div>
+        <p>Creative technology access, education, and practice for learners, collaborators, and community participants.</p>
+      </div>
+      <div>
+        <div class="footer-title">Programs</div>
+        <p><a href="education.html">Programs</a></p>
+        <p><a href="showcase.html">Pop-Ups</a></p>
+      </div>
+      <div>
+        <div class="footer-title">Contact</div>
+        <p><a href="mailto:hello@nebulacollective.org">hello@nebulacollective.org</a></p>
+        <p><a href="about.html">About</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const signupForm = document.getElementById("program-signup-form");
+
+    signupForm.addEventListener("submit", (event) => {
+      event.preventDefault();
+
+      const formData = new FormData(signupForm);
+      const values = Object.fromEntries(formData.entries());
+      const subject = `Nebula Program Sign Up: ${values.name || "New Interest"}`;
+      const body = [
+        `Full name: ${values.name || ""}`,
+        `Email: ${values.email || ""}`,
+        `Phone: ${values.phone || ""}`,
+        `Program interest: ${values.program || ""}`,
+        `Age or age range: ${values.age || ""}`,
+        "",
+        "What are you interested in learning?",
+        values.interests || "",
+        "",
+        "Any prior experience?",
+        values.experience || "",
+        "",
+        "Anything else we should know?",
+        values.notes || ""
+      ].join("\n");
+
+      window.location.href = `mailto:hello@nebulacollective.org?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    });
+  </script>
+</body>
+</html>

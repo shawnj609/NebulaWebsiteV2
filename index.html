@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Nebula Collective | Home</title>
+  <title>Nebula Foundation | Home</title>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
@@ -13,20 +13,20 @@
   <header class="top-nav-wrap">
     <div class="site-shell">
       <nav class="top-nav">
-        <a class="brand" href="index.html">Nebula Collective</a>
+        <a class="brand" href="index.html">Nebula Foundation</a>
         <div class="links">
           <a class="nav-link active" href="index.html">Home</a>
-          <a class="nav-link" href="education.html">Academy</a>
           <a class="nav-link" href="technology.html">Technology</a>
+          <a class="nav-link" href="education.html">Programs</a>
           <a class="nav-link" href="showcase.html">Pop-Ups</a>
           <a class="nav-link" href="about.html">About</a>
         </div>
-        <a class="btn btn-primary" href="about.html#support">Support</a>
+        <a class="btn btn-primary" href="#support">Support</a>
       </nav>
       <div class="mobile-links">
         <a class="nav-link active" href="index.html">Home</a>
-        <a class="nav-link" href="education.html">Academy</a>
         <a class="nav-link" href="technology.html">Technology</a>
+        <a class="nav-link" href="education.html">Programs</a>
         <a class="nav-link" href="showcase.html">Pop-Ups</a>
         <a class="nav-link" href="about.html">About</a>
       </div>
@@ -37,41 +37,81 @@
     <section class="hero">
       <div class="hero-copy">
         <span class="kicker">Educational + Cultural Nonprofit</span>
-        <h1>Creative technology education rooted in real public art practice.</h1>
+        <h1 class="home-hero-title">
+          <span>INSPIRATION</span>
+          <span>EDUCATION</span>
+          <span>ACCESS</span>
+        </h1>
         <p>
           Nebula organizes its nonprofit programs into three connected tracks: Nebula Academy (instruction), Nebula Lab
           (guided practice), and Nebula Pop-Ups (public-facing installations). Programs are founder-led with volunteer support,
           primarily in Austin, Texas and partner venues.
         </p>
         <div style="display:flex;gap:0.7rem;flex-wrap:wrap;margin-top:1rem;">
-          <a class="btn btn-primary" href="experience.html">Experience The Future</a>
+          <a class="btn btn-primary" href="signup.html">Experience The Future</a>
           <a class="btn btn-secondary" href="learn-more.html">Learn More</a>
         </div>
       </div>
       <div class="hero-media">
-        <img src="assets/homepage/flipside23.webp" alt="Nebula installation at Flipside 2023" class="hero-image"/>
+        <img src="assets/homepage/heart-group-copy.webp" alt="Nebula group heart installation" class="hero-image" style="object-position: 58% center;"/>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="featured-video-card program-buckets-shell">
+        <h2>Program Buckets</h2>
+        <p class="section-intro">
+          Each bucket supports a single feedback loop: teach foundational skills, reinforce with supervised practice,
+          and pressure-test methods in real public art environments.
+        </p>
+        <div class="grid grid-3 program-buckets" style="margin-top:1rem;">
+          <article class="card">
+            <a href="education.html#academy" class="card-link">
+              <span class="bucket-icon" aria-hidden="true">&#128187;</span>
+              <h3>Nebula Academy</h3>
+              <p>Structured workshops, classes, and school-partner programs in drone design, projection mapping, coding, and lighting.</p>
+              <p class="stat">Audience: ages 11+ (track-dependent)</p>
+            </a>
+          </article>
+          <article class="card">
+            <a href="education.html#lab" class="card-link">
+              <span class="bucket-icon" aria-hidden="true">&#129514;</span>
+              <h3>Nebula Lab</h3>
+              <p>Scheduled supervised open-lab sessions for enrolled learners and alumni, focused on guided iteration and confidence building.</p>
+            </a>
+          </article>
+          <article class="card">
+            <a href="showcase.html" class="card-link">
+              <span class="bucket-icon" aria-hidden="true">&#10024;</span>
+              <h3>Nebula Pop-Ups</h3>
+              <p>Temporary installations and event experiences that serve communities while generating practical lessons for curriculum and operations.</p>
+            </a>
+          </article>
+        </div>
       </div>
     </section>
 
     <section class="section featured-video-section">
-      <div class="featured-video-card">
+      <div class="featured-video-layout">
         <div class="featured-video-copy">
           <span class="kicker">Field Notes</span>
           <h2>Burning Man 2024</h2>
           <p class="section-intro">
-            A dispatch from the dust: light, motion, and human curiosity colliding in real time. This short film captures the
-            raw atmosphere of Burning Man 2024, where temporary worlds glow to life after sunset and creative technology becomes
-            part ritual, part experiment, part invitation to wonder.
+            The first full Nebula team project: DIY.
           </p>
-          <div class="featured-video-actions">
-            <a class="btn btn-primary" href="https://www.youtube.com/watch?v=aRwG9sxFAh0" target="_blank" rel="noreferrer">Watch On YouTube</a>
-          </div>
+          <div class="featured-video-spacer" aria-hidden="true"></div>
+          <p class="section-intro">
+            This project featured home-made PVC-pipe pyramids outfitted with LED strips.
+          </p>
+          <p class="section-intro">
+            Custom Flare software communicated wirelessly with 20 different battery-powered devices wirelessly. The entire space accented with drones...
+          </p>
         </div>
         <div class="featured-video-embed">
           <iframe
             width="560"
             height="315"
-            src="https://www.youtube.com/embed/aRwG9sxFAh0?si=VCq6AQj1fmHvP9tp"
+            src="https://www.youtube.com/embed/HD0P62ivoss?si=ZEyRVCe9Pku-G-yt"
             title="Burning Man 2024 video"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -82,73 +122,17 @@
       </div>
     </section>
 
-    <section class="section">
-      <h2>Program Buckets</h2>
-      <p class="section-intro">
-        Each bucket supports a single feedback loop: teach foundational skills, reinforce with supervised practice,
-        and pressure-test methods in real public art environments.
-      </p>
-      <div class="grid grid-3" style="margin-top:1rem;">
-        <article class="card">
-          <h3>Nebula Academy</h3>
-          <p>Structured workshops, classes, and school-partner programs in drone design, projection mapping, coding, and lighting.</p>
-          <p class="stat">Audience: ages 11+ (track-dependent)</p>
-        </article>
-        <article class="card">
-          <h3>Nebula Lab</h3>
-          <p>Scheduled supervised open-lab sessions for enrolled learners and alumni, focused on guided iteration and confidence building.</p>
-          <p class="stat">Planned launch: Year 3 (2028)</p>
-        </article>
-        <article class="card">
-          <h3>Nebula Pop-Ups</h3>
-          <p>Temporary installations and event experiences that serve communities while generating practical lessons for curriculum and operations.</p>
-          <p class="stat">Year 1 target: 2 major public Pop-Ups</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="section">
-      <h2>Past, Present, Planned</h2>
-      <div class="timeline" style="margin-top:1rem;">
-        <div class="row">
-          <div class="year">2023-2025</div>
-          <div>
-            <h3>Pilot Phase Before Formal Operations</h3>
-            <p>Academy activity centered on demonstrations and partner development, including an Akins High School drone demo,
-              planning discussions with Texas School for the Deaf, and University of Texas drone class involvement.</p>
-          </div>
+    <section class="section" id="support">
+      <h2>Support the Mission</h2>
+      <div class="card" style="margin-top:1rem;">
+        <p>
+          Support helps expand equipment access, maintain safe instructional delivery, and sustain public art programming that feeds back into education.
+          If you want to sponsor a workshop, fund scholarships, or support Pop-Up production, reach out directly.
+        </p>
+        <div style="display:flex;gap:0.7rem;flex-wrap:wrap;margin-top:1rem;">
+          <a class="btn btn-primary" href="mailto:hello@nebulacollective.org?subject=Donation%20or%20Sponsorship">Email About Sponsorship</a>
+          <a class="btn btn-secondary" href="learn-more.html">Read Program FAQ</a>
         </div>
-        <div class="row">
-          <div class="year">2026</div>
-          <div>
-            <h3>Year 1 Proof of Concept</h3>
-            <p>Two semester-based school partnerships for drone education (~40 students), plus two major Pop-Ups: Burning Man and Flipside.</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="year">2027-2028</div>
-          <div>
-            <h3>Scale with Capacity Controls</h3>
-            <p>Year 2 goals include four one-day workshops and five semester partnerships (140-180 participants). Year 3 goals include
-              6-8 workshops/classes annually, 5+ semester partnerships, 150+ annual participants, and Nebula Lab launch.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <h2>Program Delivery</h2>
-      <div class="grid grid-2" style="margin-top:1rem;">
-        <article class="card">
-          <h3>Founder-led instruction</h3>
-          <p>Unless otherwise noted, activities are conducted by the founding team with volunteers. Expansion is tied to available funding
-            and documented demand, with role-based compensation phased in as feasible.</p>
-        </article>
-        <article class="card">
-          <h3>Access-first model</h3>
-          <p>Programs are designed for learners who may lack equipment, software, capable computers, space, or mentorship. Shared tools,
-            supervised sessions, and structured guidance are core to reducing entry barriers.</p>
-        </article>
       </div>
     </section>
   </main>
@@ -156,12 +140,12 @@
   <footer>
     <div class="site-shell footer-wrap">
       <div>
-        <div class="footer-title">Nebula Collective</div>
+        <div class="footer-title">Nebula Foundation</div>
         <p>Public-serving creative technology education and cultural programming with primary operations in Austin, Texas.</p>
       </div>
       <div>
         <div class="footer-title">Pages</div>
-        <p><a href="education.html">Nebula Academy</a></p>
+        <p><a href="education.html">Programs</a></p>
         <p><a href="technology.html">Technology Stack</a></p>
         <p><a href="showcase.html">Pop-Ups</a></p>
         <p><a href="about.html">About + Support</a></p>
@@ -173,7 +157,7 @@
         <p><a href="about.html#support">Support the Mission</a></p>
       </div>
     </div>
-    <div class="site-shell meta">© 2026 Nebula Collective. Content based on internal nonprofit narrative documents.</div>
+    <div class="site-shell meta">© 2026 Nebula Foundation. Content based on internal nonprofit narrative documents.</div>
   </footer>
 </body>
 </html>
