@@ -26,7 +26,7 @@ Then open:
 
 - [http://localhost:8080/index.html](http://localhost:8080/index.html)
 
-## Hosting Notes
+## Hosting Notes.
 
 - `CNAME` is set to `Nebulacollective.org` for GitHub Pages style hosting.
 - This is a static HTML + CSS site (`site.css`), so no Node install is required.
@@ -61,7 +61,7 @@ git push origin master
 
 8. After DNS resolves, go back to `Settings` -> `Pages` and enable `Enforce HTTPS`.
 
-## Notes
+## Notes.
 
 - The workflow only publishes the actual site files, not the `workshop/` source material.
 - DNS changes can take time to propagate; GitHub will not issue the TLS certificate until the domain points correctly.
