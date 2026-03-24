@@ -40,6 +40,7 @@ jobs:
           cp site.css _site/
           cp CNAME _site/
           cp .nojekyll _site/
+          cp -R assets _site/
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
