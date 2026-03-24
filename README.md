@@ -32,7 +32,7 @@ Then open:
 - This is a static HTML + CSS site (`site.css`), so no Node install is required.
 - `.github/workflows/deploy-pages.yml` deploys the site to GitHub Pages automatically on every push to `master`.
 
-## GitHub Pages Setup
+## GitHub Pages Setup.
 
 1. Push this repo to GitHub:
 
