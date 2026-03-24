@@ -30,3 +30,38 @@ Then open:
 
 - `CNAME` is set to `Nebulacollective.org` for GitHub Pages style hosting.
 - This is a static HTML + CSS site (`site.css`), so no Node install is required.
+- `.github/workflows/deploy-pages.yml` deploys the site to GitHub Pages automatically on every push to `master`.
+
+## GitHub Pages Setup
+
+1. Push this repo to GitHub:
+
+```bash
+git push origin master
+```
+
+2. In the GitHub repo, open `Settings` -> `Pages`.
+
+3. Under `Build and deployment`, set:
+- `Source`: `GitHub Actions`
+
+4. Wait for the `Deploy GitHub Pages` workflow to run once under the `Actions` tab.
+
+5. In `Settings` -> `Pages`, set the custom domain to:
+- `nebulacollective.org`
+
+6. At your DNS provider, create these records for the apex/root domain:
+- `A` -> `185.199.108.153`
+- `A` -> `185.199.109.153`
+- `A` -> `185.199.110.153`
+- `A` -> `185.199.111.153`
+
+7. Add `www` as a subdomain:
+- `CNAME` -> `shawnj609.github.io`
+
+8. After DNS resolves, go back to `Settings` -> `Pages` and enable `Enforce HTTPS`.
+
+## Notes
+
+- The workflow only publishes the actual site files, not the `workshop/` source material.
+- DNS changes can take time to propagate; GitHub will not issue the TLS certificate until the domain points correctly.
