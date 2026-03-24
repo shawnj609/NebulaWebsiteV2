@@ -152,6 +152,55 @@ a {
   line-height: 1.6;
 }
 
+.featured-video-section {
+  padding-top: 0.2rem;
+}
+
+.featured-video-card {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 1rem;
+  background:
+    radial-gradient(circle at top left, rgba(193, 255, 254, 0.14), transparent 35%),
+    radial-gradient(circle at bottom right, rgba(255, 81, 250, 0.14), transparent 40%),
+    rgba(20, 25, 40, 0.8);
+  border: 1px solid rgba(193, 255, 254, 0.08);
+  border-radius: 24px;
+  padding: 1.2rem;
+  overflow: hidden;
+}
+
+.featured-video-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.featured-video-actions {
+  margin-top: 1rem;
+}
+
+.featured-video-embed {
+  min-height: 280px;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  background:
+    linear-gradient(180deg, rgba(10, 14, 26, 0.1), rgba(10, 14, 26, 0.88)),
+    radial-gradient(circle at 30% 20%, rgba(193, 255, 254, 0.24), transparent 20%),
+    radial-gradient(circle at 70% 30%, rgba(255, 81, 250, 0.18), transparent 24%),
+    linear-gradient(135deg, #362113, #120f1c 55%, #08141d);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.featured-video-embed iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 280px;
+  border: 0;
+}
+
 .section {
   padding: 1.6rem 0 0.8rem;
 }
@@ -266,6 +315,7 @@ footer {
 
 @media (max-width: 900px) {
   .hero,
+  .featured-video-card,
   .grid-3,
   .grid-2,
   .footer-wrap {
