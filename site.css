@@ -360,8 +360,10 @@ a {
 }
 
 .popups-video-shell {
-  width: 100%;
-  border-radius: 26px;
+  width: min(100vw - 2.5rem, 1400px);
+  margin-left: calc(50% - min(100vw - 2.5rem, 1400px) / 2);
+  margin-right: calc(50% - min(100vw - 2.5rem, 1400px) / 2);
+  border-radius: 30px;
   overflow: hidden;
   border: 1px solid rgba(193, 255, 254, 0.08);
   background:
@@ -374,8 +376,8 @@ a {
 .popups-video-shell iframe {
   display: block;
   width: 100%;
-  aspect-ratio: 16 / 9;
-  min-height: 420px;
+  aspect-ratio: 16 / 6.8;
+  min-height: 780px;
   border: 0;
 }
 
@@ -694,14 +696,15 @@ a {
   transform: translateY(-2px);
 }
 
-.program-overview .stat {
-  font-family: "Space Grotesk", sans-serif;
-  font-size: clamp(1.5rem, 3.3vw, 2.4rem);
-  font-weight: 700;
-  letter-spacing: -0.02em;
-  text-transform: none;
-  margin: 0 0 0.7rem;
-  color: var(--text);
+.program-overview .card .stat {
+  font-family: "Inter", sans-serif;
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.17em;
+  color: var(--secondary);
+  margin: 0 0 0.9rem;
+  display: inline-block;
+  line-height: 1;
 }
 
 .program-overview h2 {
@@ -710,6 +713,12 @@ a {
   letter-spacing: 0.07em;
   text-transform: uppercase;
   margin: 0 0 0.85rem;
+}
+
+.program-overview-stack .card {
+  background:
+    radial-gradient(circle at top left, rgba(193, 255, 254, 0.08), transparent 34%),
+    linear-gradient(180deg, rgba(30, 38, 58, 0.96), rgba(18, 24, 40, 0.92));
 }
 
 .programs-top {
@@ -844,7 +853,7 @@ footer {
   }
 
   .popups-video-shell iframe {
-    min-height: 240px;
+    min-height: 440px;
   }
 
   .links {
